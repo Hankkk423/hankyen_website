@@ -59,7 +59,17 @@ $(function() {
       });
     });
   });
-  
+
+
+
+
+
+// Home features
+$(".features-post").hover(
+  function() {
+      $(this).find(".content-hide").slideToggle("medium");
+  }
+);
   
   
   
