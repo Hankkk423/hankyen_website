@@ -216,7 +216,7 @@ body {
 
 
 /*** Home ***/
-.page-home {
+.site-home {
     position: relative;
     display: block;
     padding: 25px 0;
@@ -227,7 +227,7 @@ body {
     /* background-image: url(../imgs/bg_image_01.jpg); */
 }
 
-.page-home::before {
+.site-home::before {
     content: '';
     position: absolute;
     top: 0;
@@ -238,7 +238,7 @@ body {
     z-index: -1;
 }
 
-.page-home .video-background {
+.site-home .video-background {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -246,7 +246,7 @@ body {
     z-index: -2;
 }
 
-.page-home .caption-header {
+.site-home .caption-header {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -259,12 +259,12 @@ body {
     z-index: 10;
 }
 
-.page-home h1 {
+.site-home h1 {
     font-size: 50px;
 }
 
 /* Custom bootstrap */
-.page-home .badge {
+.site-home .badge {
     padding: 16px 24px;
     background-color: #747474;
     color: #fff;
@@ -274,33 +274,12 @@ body {
 }
 /* End Custom bootstrap */
 
-.page-home .floating-button {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 21px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-
-
-
-
-.features-post {
+.site-home .features-post {
     position: relative;
     margin-bottom: 0;
 }
 
-.features-content {
+.site-home .features-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -312,19 +291,34 @@ body {
     border-radius: 30px;
 }
 
-.content-show {
+.site-home .content-show {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.content-hide {
+.site-home .content-hide {
     margin-top: 15px;
     display: none;
 }
 
-.features-content:hover {
+.site-home .features-content:hover {
     background-color: #fda603;
+}
+
+/* Custom bootstrap */
+.site-home .features-content h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+/* End Custom bootstrap */
+
+.site-home .features-content h4 i {
+    margin-right: 15px;
 }
 
 @media (max-width: 992px) {
@@ -339,7 +333,7 @@ body {
 
 
 /*** About ***/
-.page-about {
+.site-about {
     position: relative;
     display: block;
     padding: 80px 0;
@@ -348,7 +342,7 @@ body {
     background-color: #fff;
 }
 
-.page-about .img-place {
+.site-about .img-place {
     position: relative;
     display: block;
     margin: 0 auto;
@@ -359,7 +353,7 @@ body {
     z-index: 10;
 }
 
-.page-about .img-place::before {
+.site-about .img-place::before {
     content: "";
     position: absolute;
     top: -20px;
@@ -371,20 +365,20 @@ body {
 }
 
 /* Custom bootstrap */
-.page-about .img-place img {
+.site-about .img-place img {
     width: 100%;
     height: auto;
 }
 /* Custom bootstrap */
 
-.page-about .info-list {
+.site-about .info-list {
     position: relative;
     padding-left: 30px;
     list-style: none;
     z-index: 10;
 }
 
-.page-about .info-list::before {
+.site-about .info-list::before {
     content: '';
     position: absolute;
     top: 0;
@@ -397,12 +391,12 @@ body {
     z-index: -1;
 }
 
-.page-about .info-list li {
+.site-about .info-list li {
     display: block;
     margin: 5px 0;
 }
 
-.page-about .info-list li::before {
+.site-about .info-list li::before {
     content: "";
     position: absolute;
     left: 3px;
@@ -414,17 +408,17 @@ body {
     border: 2px solid #888;
 }
 
-.page-about .progress-wrapper {
+.site-about .progress-wrapper {
     display: block;
     margin: 10px 0;
 }
 
-.page-about .progress-wrapper .caption {
+.site-about .progress-wrapper .caption {
     font-weight: 500;
 }
 
 /* Custom bootstrap */
-.page-about .progress {
+.site-about .progress {
     margin-top: 5px;
     height: 1.25rem;
     border: 2px solid #fff;
@@ -432,14 +426,14 @@ body {
     box-shadow: 0 0 0 2px #747474;
 }
 
-.page-about .progress, .progress-bar {
+.site-about .progress, .progress-bar {
     border-radius: 30px;
     font-size: 12px;
     background-color: #fff;
 }
 /* End Custom bootstrap */
 
-.page-about .timeline {
+.site-about .timeline {
     position: relative;
     display: block;
     list-style: none;
@@ -447,7 +441,7 @@ body {
     width: 100%;
 }
 
-.page-about .timeline::before {
+.site-about .timeline::before {
     content: '';
     position: absolute;
     top: 0;
@@ -459,14 +453,14 @@ body {
     background-color: #e3e5e9;
 }
 
-.page-about .timeline li {
+.site-about .timeline li {
     position: relative;
     display: block;
     padding-left: 30px;
     margin-bottom: 20px;
 }
 
-.page-about .timeline li::before {
+.site-about .timeline li::before {
     content: '';
     position: absolute;
     top: 8px;
@@ -478,7 +472,7 @@ body {
     border-radius: 50%;
 }
 
-.page-about .timeline li .title {
+.site-about .timeline li .title {
     width: 150px;
     padding: 6px 20px;
     background-color: #747474;
@@ -487,7 +481,7 @@ body {
     border-radius: 30px 0 60px 30px;
 }
 
-.page-about .timeline li .details {
+.site-about .timeline li .details {
     background-color: #f4f5f8;
     margin-top: 8px;
     padding: 20px;
@@ -495,12 +489,12 @@ body {
 }
 
 /* Custom bootstrap  */
-.page-about .timeline li .details h5,
-.page-about .timeline li .details p {
+.site-about .timeline li .details h5,
+.site-about .timeline li .details p {
     margin-bottom: 0;
 }
 
-.page-about .timeline li .details small {
+.site-about .timeline li .details small {
     display: block;
     font-weight: 500;
     font-size: 14px;
@@ -513,7 +507,7 @@ body {
 
 
 /*** Service ***/
-.page-service {
+.site-service {
     position: relative;
     display: block;
     padding: 80px 0;
@@ -523,7 +517,7 @@ body {
 }
 
 /* Custom bootstrap */
-.page-service .badge {
+.site-service .badge {
     margin-bottom: 8px;
     padding: 10px 30px;
     background-color: rgba(116, 116, 116, 0.15);
@@ -534,7 +528,7 @@ body {
 /* End Custom bootstrap */
 
 /* Custom bootstrap */
-.page-service .card {
+.site-service .card {
     margin: 16px auto;
     padding: 20px;
     background-color: #fff;
@@ -542,7 +536,7 @@ body {
 }
 /* End Custom bootstrap*/
 
-.page-service .card .icon {
+.site-service .card .icon {
     display: inline-block;
     margin: 0 auto;
     width: 100px;
@@ -554,7 +548,7 @@ body {
     background-color: #f4f5f8;
 }
 
-.page-service .card .caption {
+.site-service .card .caption {
     margin-top: 16px;
     text-align: center;
     color: #747474;
@@ -563,7 +557,7 @@ body {
 
 
 /*** Fun Fact ***/
-.page-funfact {
+.site-funfact {
     position: relative;
     display: block;
     width: 100%;
@@ -578,7 +572,7 @@ body {
     background-image: url(../imgs/bg_banner_01.jpg);
 }
 
-.page-funfact::before {
+.site-funfact::before {
     content: '';
     position: absolute;
     top: 0;
@@ -592,7 +586,7 @@ body {
 
 
 /*** Work ***/
-.page-work {
+.site-work {
     position: relative;
     display: block;
     padding: 80px 0;
@@ -601,7 +595,7 @@ body {
 }
 
 /* Custom bootstrap */
-.page-work .badge {
+.site-work .badge {
     margin-bottom: 8px;
     padding: 10px 30px;
     background-color: rgba(116, 116, 116, 0.15);
@@ -611,7 +605,7 @@ body {
 }
 /* End Custom bootstrap */
 
-.page-work .filterable-button {
+.site-work .filterable-button {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -624,7 +618,7 @@ body {
 }
 
 /* Custom bootstrap */
-.page-work .filterable-button .btn {
+.site-work .filterable-button .btn {
     padding: 5px 16px;
     margin: 6px;
     font-size: 14px;
@@ -636,50 +630,50 @@ body {
 }
 /* End Custom bootstrap */
 
-.page-work .filterable-button .btn.selected, 
-.page-work .filterable-button .btn:focus {
+.site-work .filterable-button .btn.selected, 
+.site-work .filterable-button .btn:focus {
     background-color: #747474;
     color: #fff;
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px #747474;
 }
 
-.page-work .filterable-button .btn:hover {
+.site-work .filterable-button .btn:hover {
     background-color: #747474;
     color: #fff;
 }
 
-.page-work .gridder {
+.site-work .gridder {
     position: relative;
     display: block;
 }
 
-.page-work .grid-item {
+.site-work .grid-item {
     display: block;
     float: left;
     margin: 16px 0;
     padding: 0 16px;
 }
 
-.page-work .grid-item, 
-.page-work .grid-sizer {
+.site-work .grid-item, 
+.site-work .grid-sizer {
     width: 100%;
 }
 
 @media (min-width: 768px) {
-    .page-work .gridder .grid-item, 
-    .page-work .gridder .grid-sizer {
+    .site-work .gridder .grid-item, 
+    .site-work .gridder .grid-sizer {
         width: 50%;
     }
 }
 
 @media (min-width: 992px) {
-    .page-work .gridder .grid-item, 
-    .page-work .gridder .grid-sizer {
+    .site-work .gridder .grid-item, 
+    .site-work .gridder .grid-sizer {
         width: 33.33333%;
     }
 }
 
-.page-work .gridder .grid-item .img-place {
+.site-work .gridder .grid-item .img-place {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -693,13 +687,13 @@ body {
 }
 
 /* Custom bootstrap */
-.page-work .gridder .grid-item .img-place img {
+.site-work .gridder .grid-item .img-place img {
     width: 100%;
     height: 100%;
 }
 /* End Custom bootstrap */
 
-.page-work .gridder .grid-item .img-caption {
+.site-work .gridder .grid-item .img-caption {
     position: absolute;
     bottom: 0;
     padding: 12px 16px;
@@ -710,18 +704,18 @@ body {
 }
 
 /* Custom bootstrap */
-.page-work .gridder .grid-item .img-caption p {
+.site-work .gridder .grid-item .img-caption p {
     font-size: 14px;
     margin-bottom: 0;
 }
 /* End Custom bootstrap */
 
-.page-work .gridder .grid-item .img-caption p::before {
+.site-work .gridder .grid-item .img-caption p::before {
     content: "\2014";
     margin-right: 5px;
 }
 
-.page-work .btn-loadmore {
+.site-work .btn-loadmore {
     padding: 10px 30px;
     margin: 5px;
     height: unset;
@@ -735,7 +729,7 @@ body {
 
 
 /*** Contact ***/
-.page-contact {
+.site-contact {
     position: relative;
     display: block;
     padding: 80px 0;
@@ -745,7 +739,7 @@ body {
 }
 
 /* Custom bootstrap */
-.page-contact .badge {
+.site-contact .badge {
     margin-bottom: 8px;
     padding: 10px 30px;
     background-color: rgba(116, 116, 116, 0.15);
@@ -755,21 +749,21 @@ body {
 }
 /* End Custom bootstrap */
 
-.page-contact .maps-container {
+.site-contact .maps-container {
     width: 100%;
     height: 450px;
     min-height: 400px;
     background-color: #f8f9fa;
 }
 
-.page-contact .contact-form {
+.site-contact .contact-form {
     margin: 0 auto;
     padding: 30px 0;
     max-width: 400px;
 }
 
 /* Custom bootstrap */
-.page-contact .form-control {
+.site-contact .form-control {
     height: unset;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -780,7 +774,7 @@ body {
 /* End Custom bootstrap */
 
 /* Custom bootstrap */
-.page-contact .btn {
+.site-contact .btn {
     padding: 10px 30px;
     margin: 5px;
     height: unset;
@@ -795,7 +789,7 @@ body {
 
 
 /*** Footer ***/
-.page-footer {
+.site-footer {
     position: relative;
     display: block;
     margin: 0;
@@ -804,11 +798,11 @@ body {
     color: #9FA2AB;
 }
 
-.page-footer .footer-info {
+.site-footer .footer-info {
     max-width: 350px;
 }
 
-.page-footer .divider {
+.site-footer .divider {
     display: block;
     margin: -5px 0 16px 0;
     max-width: 150px;
@@ -816,15 +810,15 @@ body {
 }
 
 /* Custom bootstrap */
-.page-footer .list-unstyled a, 
-.page-footer .list-unstyled li {
+.site-footer .list-unstyled a, 
+.site-footer .list-unstyled li {
     margin-bottom: 6px;
     font-size: 21px;
     color: #fff;
 }
 /* End Custom bootstrap */
 
-.page-footer .form-control {
+.site-footer .form-control {
     height: unset;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -839,7 +833,7 @@ body {
 }
 
 /* Custom bootstrap */
-.page-footer .btn {
+.site-footer .btn {
     padding: 14px 30px;
     margin: 0px;
     height: unset;
@@ -852,7 +846,7 @@ body {
 }
 /* End Custom bootstrap */
 
-.page-footer .btn.no-shadow {
+.site-footer .btn.no-shadow {
     box-shadow: none;
 }
 
@@ -916,7 +910,7 @@ body {
 
 
 /*** Testimonial ***/
-.page-testimonial {
+.site-testimonial {
     position: relative;
     display: block;
     padding: 80px 0;
@@ -924,12 +918,12 @@ body {
     overflow: hidden;
 }
 
-.page-testimonial .testi-carousel .item {
+.site-testimonial .testi-carousel .item {
     display: block;
     width: 100%;
 }
 
-.page-testimonial .testi-carousel .img-place {
+.site-testimonial .testi-carousel .img-place {
     position: relative;
     display: block;
     margin: 0 auto;
@@ -943,23 +937,23 @@ body {
 }
 
 /* Custom owl-carousel  */
-.page-testimonial .testi-carousel .img-place>img {
+.site-testimonial .testi-carousel .img-place>img {
     display: block;
     width: 100%;
     height: auto;
 }
 /* End Custom owl-carousel  */
 
-.page-testimonial .testi-carousel .item .caption {
+.site-testimonial .testi-carousel .item .caption {
     display: block;
     padding: 20px 0;
 }
 
-.page-testimonial .testi-content {
+.site-testimonial .testi-content {
     font-size: 18px;
 }
 
-.page-testimonial .testi-info {
+.site-testimonial .testi-info {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -968,7 +962,7 @@ body {
     width: 100%;
 }
 
-.page-testimonial .testi-info .thumb-profile {
+.site-testimonial .testi-info .thumb-profile {
     position: relative;
     margin-right: 8px;
     width: 70px;
@@ -979,7 +973,7 @@ body {
 }
 
 /* Custom owl-caroesel */
-.page-testimonial .testi-carousel .owl-dots {
+.site-testimonial .testi-carousel .owl-dots {
     position: relative;
     display: block;
     width: 100%;
@@ -989,14 +983,14 @@ body {
     background: #fff;
 }
 
-.page-testimonial .testi-carousel .owl-dots .owl-dot {
+.site-testimonial .testi-carousel .owl-dots .owl-dot {
     position: relative;
     display: inline-block;
     margin: 0 2px;
     outline: none;
 }
 
-.page-testimonial .testi-carousel .owl-dots .owl-dot span {
+.site-testimonial .testi-carousel .owl-dots .owl-dot span {
     display: block;
     width: 10px;
     height: 10px;
@@ -1004,7 +998,7 @@ body {
     background: #dadada;
 }
 
-.page-testimonial .testi-carousel .owl-dots .owl-dot.active span {
+.site-testimonial .testi-carousel .owl-dots .owl-dot.active span {
     background: #1057fa;
 }
 /* End Custom owl-caroesel */
@@ -1029,16 +1023,16 @@ body {
     color: #45678e !important;
 }
 
-.theme-hk .page-home .badge {
+.theme-hk .site-home .badge {
     background-color: #45678e40;
     color: #45678e;
 }
 
-.theme-hk .page-about .img-place::before {
+.theme-hk .site-about .img-place::before {
     border-color: #45678e;
 }
 
-.theme-hk .page-about .info-list li::before {
+.theme-hk .site-about .info-list li::before {
     border-color: #45678e;
 }
 
@@ -1047,56 +1041,56 @@ body {
     box-shadow: 0 0 0 2px #45678e;
 }
 
-.theme-hk .page-about .progress {
+.theme-hk .site-about .progress {
     box-shadow: 0 0 0 2px #45678e;
 }
 
-.theme-hk .page-about .progress-bar {
+.theme-hk .site-about .progress-bar {
     background-color: #45678e;
 }
 
-.theme-hk .page-about .timeline li:first-child::before {
+.theme-hk .site-about .timeline li:first-child::before {
     background-color: #45678e;
     box-shadow: 0 0 0 2px #45678e;
 }
 
-.theme-hk .page-about .timeline li:first-child .title {
+.theme-hk .site-about .timeline li:first-child .title {
     background-color: #45678e;
 }
 
-.theme-hk .page-service .badge {
+.theme-hk .site-service .badge {
     background-color: #45678e40;
     color: #45678e;
 }
 
-.theme-hk .page-work .badge {
+.theme-hk .site-work .badge {
     background-color: #45678e40;
     color: #45678e;
 }
 
-.theme-hk .page-work .filterable-button .btn.selected, 
-.theme-hk .page-work .filterable-button .btn:focus {
+.theme-hk .site-work .filterable-button .btn.selected, 
+.theme-hk .site-work .filterable-button .btn:focus {
     background-color: #45678e;
     color: #fff;
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px #45678e;
 }
 
-.theme-hk .page-work .btn-loadmore {
+.theme-hk .site-work .btn-loadmore {
     background-color: #45678e;
     color: #fff;
 }
 
-.theme-hk .page-contact .badge {
+.theme-hk .site-contact .badge {
     background-color: #45678e40;
     color: #45678e;
 }
 
-.theme-hk .page-contact .btn {
+.theme-hk .site-contact .btn {
     background-color: #45678e;
     color: #fff;
 }
 
-.theme-hk .page-footer .input-group .btn {
+.theme-hk .site-footer .input-group .btn {
     background-color: #45678e;
     color: #fff;
 }
