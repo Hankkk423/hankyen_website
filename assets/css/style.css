@@ -728,171 +728,6 @@ body {
 
 
 
-/*** Contact ***/
-.site-contact {
-    position: relative;
-    display: block;
-    padding: 80px 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #fff;
-}
-
-/* Custom bootstrap */
-.site-contact .badge {
-    margin-bottom: 8px;
-    padding: 10px 30px;
-    background-color: rgba(116, 116, 116, 0.15);
-    color: #747474;
-    font-size: 14px;
-    border-radius: 40px;
-}
-/* End Custom bootstrap */
-
-.site-contact .maps-container {
-    width: 100%;
-    height: 450px;
-    min-height: 400px;
-    background-color: #f8f9fa;
-}
-
-.site-contact .contact-form {
-    margin: 0 auto;
-    padding: 30px 0;
-    max-width: 400px;
-}
-
-/* Custom bootstrap */
-.site-contact .form-control {
-    height: unset;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 6px;
-    border: 2px solid #c2c6ce;
-    font-weight: 500;
-}
-/* End Custom bootstrap */
-
-/* Custom bootstrap */
-.site-contact .btn {
-    padding: 10px 30px;
-    margin: 5px;
-    height: unset;
-    background-color: #747474;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 6px;
-    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0,0,0,0.3);
-}
-/* End Custom bootstrap */
-
-
-
-
-/*** Self Info Bar ***/
-.info_section {
-    position: relative;
-    background-color: #252525;
-    color: #fff;
-
-}
-
-.info_section .info_logo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 45px;
-}
-
-/* Custom bootstrap */
-.info_section .info_logo .navbar-brand {
-    color: #fff;
-    font-weight: 700;
-    font-size: 28px;
-}
-/* End Custom bootstrap */
-
-.info_section .info_logo .navbar-brand span {
-    color: #da7426;
-}
-
-/* .info_bottom {
-
-} */
-
-
-
-
-
-
-
-
-/*** Footer ***/
-.site-footer {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 50px 0;
-    background-color: #171925;
-    color: #9FA2AB;
-}
-
-.site-footer .footer-info {
-    max-width: 350px;
-}
-
-.site-footer .divider {
-    display: block;
-    margin: -5px 0 16px 0;
-    max-width: 150px;
-    border-bottom: 2px dashed #9FA2AB;
-}
-
-/* Custom bootstrap */
-.site-footer .list-unstyled a, 
-.site-footer .list-unstyled li {
-    margin-bottom: 6px;
-    font-size: 21px;
-    color: #fff;
-}
-/* End Custom bootstrap */
-
-.site-footer .form-control {
-    height: unset;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 6px;
-    border: 0;
-    font-weight: 500;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #202334;
-    color: #9FA2AB;
-    box-shadow: 0 2px 8px rgba(16, 18, 27, 0.6);
-}
-
-/* Custom bootstrap */
-.site-footer .btn {
-    padding: 14px 30px;
-    margin: 0px;
-    height: unset;
-    background-color: #747474;  /**/
-    color: #fff;  /**/
-    font-weight: 500;
-    border-radius: 0px 4px 4px 0px;
-    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0,0,0,0.3);
-    z-index: 9;
-}
-/* End Custom bootstrap */
-
-.site-footer .btn.no-shadow {
-    box-shadow: none;
-}
-
-
-
-
-
-
 
 
 /*** Button ***/
@@ -1040,6 +875,109 @@ body {
     background: #1057fa;
 }
 /* End Custom owl-caroesel */
+
+
+
+
+
+/*** Contact ***/
+.site-contact {
+    position: relative;
+    display: block;
+    padding: 80px 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Custom bootstrap */
+.site-contact .badge {
+    margin-bottom: 8px;
+    padding: 10px 30px;
+    background-color: rgba(116, 116, 116, 0.15);
+    color: #747474;
+    font-size: 14px;
+    border-radius: 40px;
+}
+/* End Custom bootstrap */
+
+.site-contact .maps-container {
+    width: 100%;
+    height: 450px;
+    min-height: 400px;
+    background-color: #f8f9fa;
+}
+
+.site-contact .contact-form {
+    margin: 0 auto;
+    padding: 30px 0;
+    max-width: 400px;
+}
+
+/* Custom bootstrap */
+.site-contact .form-control {
+    height: unset;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    border: 2px solid #c2c6ce;
+    font-weight: 500;
+}
+/* End Custom bootstrap */
+
+/* Custom bootstrap */
+.site-contact .btn {
+    padding: 10px 30px;
+    margin: 5px;
+    height: unset;
+    background-color: #747474;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0,0,0,0.3);
+}
+/* End Custom bootstrap */
+
+
+
+
+
+
+
+
+
+/*** Footer ***/
+.site-footer {
+    position: relative;
+    background-color: #252525;
+    color: #fff;
+
+}
+
+.site-footer .info_logo {
+    display: flex;
+    justify-content: center
+}
+
+/* Custom bootstrap */
+.site-footer .info_logo .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+}
+/* End Custom bootstrap */
+
+.site-footer .info_logo .navbar-brand span {
+    color: #da7426;
+}
+
+.site-footer .info_bottom .link-box {
+    color: #da7426;
+}
+
+.site-footer .info_bottom span {
+    font-weight: 700;
+}
 
 
 
