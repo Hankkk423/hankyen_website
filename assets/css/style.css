@@ -788,6 +788,44 @@ body {
 
 
 
+
+/*** Self Info Bar ***/
+.info_section {
+    position: relative;
+    background-color: #252525;
+    color: #fff;
+
+}
+
+.info_section .info_logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+/* Custom bootstrap */
+.info_section .info_logo .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+}
+/* End Custom bootstrap */
+
+.info_section .info_logo .navbar-brand span {
+    color: #da7426;
+}
+
+/* .info_bottom {
+
+} */
+
+
+
+
+
+
+
+
 /*** Footer ***/
 .site-footer {
     position: relative;
