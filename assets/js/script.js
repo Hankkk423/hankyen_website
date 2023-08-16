@@ -35,14 +35,6 @@ $(function() {
       $('body').addClass(cls);
     });
     
-    $('#change-page').on('change', function() {
-      var url = $(this).val() + '.html';
-      
-      if($(this).val()) {
-        window.location.assign(url);
-      }
-    });
-  
   });
   
   
@@ -77,7 +69,7 @@ $(".features-post").hover(
   
   
   // Back to top button
-  var backTop = $(".btn-back_to_top");
+  var backTop = $(".back_to_top");
     
   $(window).scroll(function() {
     if($(document).scrollTop() > 400) {

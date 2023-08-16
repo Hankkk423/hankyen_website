@@ -20,10 +20,14 @@
         href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.6/themify-icons.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 
     <!-- Custom JavaScript -->
@@ -34,7 +38,7 @@
 
 
     <!-- Back to top button -->
-    <div class="btn-back_to_top">
+    <div class="back_to_top">
         <span class="ti ti-arrow-up"></span>
     </div>
     <!-- End Back to top button -->
@@ -49,16 +53,21 @@
                     <span class="ti ti-settings"></span>
                 </button>
             </div>
-            <!-- Puschase -->
+            <!-- Download CV -->
             <div class="d-block">
-                <a href="#" class="btn" title="Download CV" data-toggle="tooltip" data-placement="left">
+                <!-- <a href="#" class="btn" title="Download CV" data-toggle="tooltip" data-placement="left">
+                    <span class="ti ti-download"></span>
+                </a> -->
+
+                <a href="" class="btn" title="Download CV" data-toggle="modal" data-target="#downloadModal">
                     <span class="ti ti-download"></span>
                 </a>
+
             </div>
-            <!-- Help -->
+            <!-- Contact -->
             <div class="d-block">
-                <a href="#" class="btn" title="Help" data-toggle="tooltip" data-placement="left">
-                    <span class="ti ti-help"></span>
+                <a href="#footer" class="btn" title="Contact" data-toggle="tooltip" data-placement="left">
+                    <span class="ti ti-link"></span>
                 </a>
             </div>
         </div>
@@ -71,16 +80,37 @@
                 <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
                 <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
             </div>
-            <select class="custom-select d-block my-2" id="change-page">
-                <option value="">Choose Page</option>
-                <option value="index">Landing</option>
-                <option value="">Page 1</option>
-                <option value="">Page 2</option>
-                <option value="">Page 3</option>
-            </select>
         </div>
     </div>
     <!-- End Setting button -->
+
+
+
+    <!-- Bootstrap Modal -->
+    <div class="pop_up_box">
+        <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="downloadModalLabel">Download CV</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to download the CV?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <a href="assets/imgs/cv_s01.pdf" class="btn btn-primary" id="downloadBtn">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Bootstrap Modal -->
+
 
 
     <!-- Navbar -->
@@ -102,15 +132,15 @@
                         <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link" data-animate="scrolling">Blog</a>
+                        <a href="#testimonial" class="nav-link" data-animate="scrolling">Quote</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <ul class="nav ml-auto">
                     <li class="nav-item">
-                        <button class="btn btn-fab no-shadow">HK</button>
+                        <button class="btn">H</button>
                     </li>
                 </ul>
             </div>
@@ -195,6 +225,7 @@
 
     <!-- About -->
     <div class="site-about" id="about">
+
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-4 py-3">
@@ -215,10 +246,14 @@
                         <li><b>Age:</b> gravida</li>
                         <li><b>Gender:</b> Fusce </li>
                     </ul>
-                    <button class="btn btn-theme-outline">Cras Lacinia</button>
+                    <!-- <button class="btn btn-cv">Cras Lacinia</button> -->
+                    <a href="" class="btn btn-cv" title="Download CV" data-toggle="modal" data-target="#downloadModal">
+                        Cras Lacinia
+                    </a>
                 </div>
             </div>
         </div>
+
         <div class="container py-5">
             <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
             <div class="row py-3">
@@ -283,6 +318,7 @@
                 </div>
             </div>
         </div>
+
         <div class="container pt-5">
             <div class="row">
                 <div class="col-md-6 wow fadeInRight">
@@ -447,13 +483,13 @@
             </div>
             <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
             <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-                <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-                <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
-                <button class="btn btn-theme-outline" data-filter=".template">Template</button>
-                <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
-                <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
-                <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
-                <button class="btn btn-theme-outline" data-filter=".wireframes">Wireframes</button>
+                <button class="btn selected" data-filter="*">All</button>
+                <button class="btn" data-filter=".apps">Apps</button>
+                <button class="btn" data-filter=".template">Template</button>
+                <button class="btn" data-filter=".ios">IOS</button>
+                <button class="btn" data-filter=".ui-ux">UI/UX</button>
+                <button class="btn" data-filter=".graphic">Graphic</button>
+                <button class="btn" data-filter=".wireframes">Wireframes</button>
             </div>
 
             <!-- gridder -->
@@ -522,7 +558,7 @@
             <!-- End gridder -->
 
             <div class="text-center wow fadeInUp">
-                <a href="javascript:void(0)" class="btn btn-loadmore">Load More</a>
+                <a href="" class="btn btn-loadmore">Load More</a>
             </div>
         </div>
     </div>
@@ -530,9 +566,9 @@
 
 
     <!-- Testimonial -->
-    <div class="site-testimonial">
+    <div class="site-testimonial" id="testimonial">
         <div class="container">
-            <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
+            <h1 class="text-center fw-normal wow fadeInUp">Favorite Quote</h1>
             <div class="row justify-content-center mt-5 wow fadeInUp">
                 <div class="col-md-9">
                     <div class="owl-carousel testi-carousel">
@@ -595,10 +631,8 @@
 
 
 
-
-
     <!-- Contact -->
-    <div class="site-contact" id="contact">
+    <!-- <div class="site-contact" id="contact">
         <div class="container-fluid">
             <div class="text-center wow fadeInUp">
                 <div class="badge">Contact</div>
@@ -635,14 +669,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Contact -->
 
 
 
 
     <!-- Footer -->
-    <div class="site-footer py-3 mt-3">
+    <div class="site-footer py-3 mt-3" id="footer">
         <div class="info_container">
             <div class="container-fluid">
 
@@ -655,7 +689,7 @@
                 <div class="info_bottom py-1 mx-4">
                     <div class="row justify-content-center">
                         <div class="col-lg-3 col-md-3">
-                            <a href="" class="link-box">
+                            <a href="#footer" class="link-box">
                                 <i class="fa fa-map-marker fa-bounce" aria-hidden="true"></i>
                                 <span>Location</span>
                             </a>
@@ -664,7 +698,7 @@
                             </p>
                         </div>
                         <div class="col-lg-3 col-md-3">
-                            <a href="" class="link-box">
+                            <a href="#footer" class="link-box">
                                 <i class="fa fa-phone fa-shake" aria-hidden="true"></i>
                                 <span>Phone</span>
                             </a>
@@ -673,7 +707,7 @@
                             </p>
                         </div>
                         <div class="col-lg-3 col-md-3">
-                            <a href="" class="link-box">
+                            <a href="#footer" class="link-box">
                                 <i class="fa fa-envelope fa-beat" aria-hidden="true"></i>
                                 <span>Email</span>
                             </a>
@@ -682,16 +716,16 @@
                             </p>
                         </div>
                         <div class="col-lg-3 col-md-3">
-                            <a href="" class="link-box">
+                            <a href="#footer" class="link-box">
                                 <i class="fa-brands fa-linkedin fa-spin-pulse" aria-hidden="true"></i>
                                 <span>LinkedIn</span>
                             </a>
                             <br>
-                            <a href="" class="link-box">
+                            <a href="#footer" class="link-box">
                                 <i class="fa-brands fa-github fa-spin-pulse"></i>
                                 <span>GitHub</span>
                             </a>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -706,7 +740,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> <!-- original v1.3.0 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
