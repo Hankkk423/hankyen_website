@@ -892,8 +892,6 @@ body {
 
 
 
-
-
 /*** Contact ***/
 .site-contact {
     position: relative;
@@ -954,12 +952,6 @@ body {
 
 
 
-
-
-
-
-
-
 /*** Footer ***/
 .site-footer {
     position: relative;
@@ -993,11 +985,7 @@ body {
 
 
 
-
-
-
-
-/*** Theme ***/ 
+/*** Theme-HK ***/ 
 .theme-hk .fc-theme {
     color: #45678e !important;
 }
@@ -1092,4 +1080,105 @@ body {
 
 .theme-hk .site-footer .info_bottom .link-box {
     color: #45678e;
+}
+
+
+
+
+
+/*** Theme-Green ***/ 
+.theme-green .fc-theme {
+    color: #8cc63f !important;
+}
+
+/* Nav Bar */
+.theme-green .navbar .nav-item .btn {
+    background-color: #8cc63f;
+    color: #fff;
+}
+
+/* Home */
+.theme-green .site-home .badge {
+    background-color: #8cc63f40;
+    color: #8cc63f;
+}
+
+/* About */
+.theme-green .site-about .img-place::before {
+    border-color: #8cc63f;
+}
+
+.theme-green .site-about .info-list li::before {
+    border-color: #8cc63f;
+}
+
+.theme-green .site-about .btn-cv {
+    color: #8cc63f;
+    box-shadow: 0 0 0 2px #8cc63f;
+}
+
+.theme-green .site-about .progress {
+    box-shadow: 0 0 0 2px #8cc63f;
+}
+
+.theme-green .site-about .progress-bar {
+    background-color: #8cc63f;
+}
+
+.theme-green .site-about .timeline li:first-child::before {
+    background-color: #8cc63f;
+    box-shadow: 0 0 0 2px #8cc63f;
+}
+
+.theme-green .site-about .timeline li:first-child .title {
+    background-color: #8cc63f;
+}
+
+/* Service */
+.theme-green .site-service .badge {
+    background-color: #8cc63f40;
+    color: #8cc63f;
+}
+
+/* Work */
+.theme-green .site-work .badge {
+    background-color: #8cc63f40;
+    color: #8cc63f;
+}
+
+.theme-green .site-work .filterable-button .btn {
+    color: #8cc63f;
+    box-shadow: 0 0 0 2px #8cc63f;
+}
+
+.theme-green .site-work .filterable-button .btn.selected, 
+.theme-green .site-work .filterable-button .btn:focus {
+    background-color: #8cc63f;
+    color: #fff;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #8cc63f;
+}
+
+.theme-green .site-work .btn-loadmore {
+    background-color: #8cc63f;
+    color: #fff;
+}
+
+/* Contact */
+.theme-green .site-contact .badge {
+    background-color: #8cc63f40;
+    color: #8cc63f;
+}
+
+.theme-green .site-contact .btn {
+    background-color: #8cc63f;
+    color: #fff;
+}
+
+/* Footer */
+.theme-green .site-footer .info_logo .navbar-brand span {
+    color: #8cc63f;
+}
+
+.theme-green .site-footer .info_bottom .link-box {
+    color: #8cc63f;
 }
