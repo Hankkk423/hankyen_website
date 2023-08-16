@@ -58,11 +58,9 @@
                 <!-- <a href="#" class="btn" title="Download CV" data-toggle="tooltip" data-placement="left">
                     <span class="ti ti-download"></span>
                 </a> -->
-
                 <a href="" class="btn" title="Download CV" data-toggle="modal" data-target="#downloadModal">
                     <span class="ti ti-download"></span>
                 </a>
-
             </div>
             <!-- Contact -->
             <div class="d-block">
@@ -75,9 +73,9 @@
             <p>Select Color</p>
             <div class="color-bar" data-toggle="selected">
                 <span class="color-item bg-theme-hk selected" data-class="theme-hk"></span>
-                <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+                <!-- <span class="color-item bg-theme-blue" data-class="theme-blue"></span> -->
                 <span class="color-item bg-theme-green" data-class="theme-green"></span>
-                <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+                <!-- <span class="color-item bg-theme-orange" data-class="theme-orange"></span> -->
                 <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
             </div>
         </div>
@@ -86,7 +84,7 @@
 
 
 
-    <!-- Bootstrap Modal -->
+    <!-- Bootstrap Modal for download CV -->
     <div class="pop_up_box">
         <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModalLabel"
             aria-hidden="true">
@@ -103,13 +101,13 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <a href="assets/imgs/cv_s01.pdf" class="btn btn-primary" id="downloadBtn">Download</a>
+                        <a href="assets/imgs/cv_s01.pdf" class="btn btn-primary" id="downloadBtn" target="_blank">Download</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Bootstrap Modal -->
+    <!-- End Bootstrap Modal for download CV -->
 
 
 
@@ -140,13 +138,45 @@
                 </ul>
                 <ul class="nav ml-auto">
                     <li class="nav-item">
-                        <button class="btn">H</button>
+                        <!-- <button class="btn">H</button> -->
+                        <button class="btn" data-toggle="modal" data-target="#videoModal"></button>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- End Navbar -->
+
+
+    <!-- Bootstrap Modal for playing youtube video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">YouTube Video</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/3wcvKhceO1I"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                    <iframe width="100%" height="315" src="assets/imgs/duck dive.mp4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Bootstrap Modal for playing youtube video -->
 
 
     <!-- Home Start -->
@@ -162,12 +192,10 @@
             <div class="badge">interdum eros sed interdum</div>
         </div>
 
-        <!-- <div class="floating-button"><span class="ti ti-mouse"></span></div> -->
-
         <div class="features">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-4 col-md-4 col-mobile">
                         <div class="features-post">
                             <div class="features-content wow bounceInLeft">
                                 <div class="content-show">
@@ -182,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-4 col-md-4 col-mobile">
                         <div class="features-post wow bounceInDown">
                             <div class="features-content">
                                 <div class="content-show">
@@ -197,7 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-4 col-md-4 col-mobile">
                         <div class="features-post wow bounceInRight">
                             <div class="features-content">
                                 <div class="content-show">
@@ -694,7 +722,7 @@
                                 <span>Location</span>
                             </a>
                             <p>
-                                <h6>123 Main Street City, CA, Country 98765</h6>
+                            <h6>123 Main Street City, CA, Country 98765</h6>
                             </p>
                         </div>
                         <div class="col-lg-3 col-md-3">
@@ -703,7 +731,7 @@
                                 <span>Phone</span>
                             </a>
                             <p>
-                                <h6>+01 1234567890</h6>
+                            <h6>+01 1234567890</h6>
                             </p>
                         </div>
                         <div class="col-lg-3 col-md-3">
@@ -712,7 +740,7 @@
                                 <span>Email</span>
                             </a>
                             <p>
-                                <h6>mail@domain.com</h6>
+                            <h6>mail@domain.com</h6>
                             </p>
                         </div>
                         <div class="col-lg-3 col-md-3">
