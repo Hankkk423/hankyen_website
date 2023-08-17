@@ -45,6 +45,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
 }
+
 /** End Custom bootstrap body **/
 
 .fw-bold {
@@ -98,8 +99,10 @@ body {
     /* background-color: #fa1010; */
     background-image: url(../imgs/tracker_s02.png);
     background-position: center center;
-    background-size: contain; /* Adjust to fit your needs */
-    background-repeat: no-repeat; /* Prevent repeating */
+    background-size: contain;
+    /* Adjust to fit your needs */
+    background-repeat: no-repeat;
+    /* Prevent repeating */
 }
 
 
@@ -168,6 +171,7 @@ body {
     background-color: transparent !important;
     color: #52565c !important;
 }
+
 /* End Custom bootstrap */
 
 .config .set-menu {
@@ -269,9 +273,12 @@ body {
     margin: 5px;
     box-shadow: none !important;
     background-image: url(../imgs/aloha.jpg);
-    background-size: cover; /* Resize the image to cover the entire button */
-    background-position: center center; /* Center the image horizontally and vertically */
+    background-size: cover;
+    /* Resize the image to cover the entire button */
+    background-position: center center;
+    /* Center the image horizontally and vertically */
 }
+
 /* End Custom bootstrap */
 
 
@@ -333,6 +340,7 @@ body {
     font-size: 16px;
     border-radius: 40px;
 }
+
 /* End Custom bootstrap */
 
 .site-home .features-post {
@@ -376,6 +384,7 @@ body {
     letter-spacing: 1px;
     margin-bottom: 0px;
 }
+
 /* End Custom bootstrap */
 
 .site-home .features-content h4 i {
@@ -442,6 +451,7 @@ body {
     width: 100%;
     height: auto;
 }
+
 /* Custom bootstrap */
 
 .site-about .info-list {
@@ -492,6 +502,7 @@ body {
     font-weight: 500;
     box-shadow: 0 0 0 2px #747474;
 }
+
 /* End Custom bootstrap */
 
 .site-about .progress-wrapper {
@@ -512,11 +523,13 @@ body {
     box-shadow: 0 0 0 2px #747474;
 }
 
-.site-about .progress, .progress-bar {
+.site-about .progress,
+.progress-bar {
     border-radius: 30px;
     font-size: 12px;
     background-color: #fff;
 }
+
 /* End Custom bootstrap */
 
 .site-about .timeline {
@@ -587,6 +600,7 @@ body {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 /* End Custom bootstrap */
 
 
@@ -611,6 +625,7 @@ body {
     font-size: 14px;
     border-radius: 40px;
 }
+
 /* End Custom bootstrap */
 
 /* Custom bootstrap */
@@ -620,6 +635,7 @@ body {
     background-color: #fff;
     border: 0;
 }
+
 /* End Custom bootstrap*/
 
 .site-service .card .icon {
@@ -689,6 +705,7 @@ body {
     font-size: 14px;
     border-radius: 40px;
 }
+
 /* End Custom bootstrap */
 
 .site-work .filterable-button {
@@ -716,9 +733,10 @@ body {
     border: 0;
     height: unset;
 }
+
 /* End Custom bootstrap */
 
-.site-work .filterable-button .btn.selected, 
+.site-work .filterable-button .btn.selected,
 .site-work .filterable-button .btn:focus {
     background-color: #747474;
     color: #fff;
@@ -776,6 +794,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 /* End Custom bootstrap */
 
 .site-work .gridder .grid-item .img-caption {
@@ -793,6 +812,7 @@ body {
     font-size: 14px;
     margin-bottom: 0;
 }
+
 /* End Custom bootstrap */
 
 .site-work .gridder .grid-item .img-caption p::before {
@@ -808,7 +828,7 @@ body {
     color: #fff;
     font-weight: 500;
     border-radius: 6px;
-    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -848,6 +868,7 @@ body {
     width: 100%;
     height: auto;
 }
+
 /* End Custom owl-carousel  */
 
 .site-testimonial .testi-carousel .item .caption {
@@ -907,6 +928,7 @@ body {
 .site-testimonial .testi-carousel .owl-dots .owl-dot.active span {
     background: #1057fa;
 }
+
 /* End Custom owl-caroesel */
 
 
@@ -930,6 +952,7 @@ body {
     font-size: 14px;
     border-radius: 40px;
 }
+
 /* End Custom bootstrap */
 
 .site-contact .maps-container {
@@ -954,6 +977,7 @@ body {
     border: 2px solid #c2c6ce;
     font-weight: 500;
 }
+
 /* End Custom bootstrap */
 
 /* Custom bootstrap */
@@ -965,8 +989,9 @@ body {
     color: #fff;
     font-weight: 500;
     border-radius: 6px;
-    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0, 0, 0, 0.3);
 }
+
 /* End Custom bootstrap */
 
 
@@ -975,8 +1000,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Adjust this size as needed */
-    height: 450px; /* Adjust this size as needed */
+    width: 100%;
+    /* Adjust this size as needed */
+    height: 450px;
+    /* Adjust this size as needed */
     margin: 5px 0 5px 0;
     padding: 15px;
     background-color: #2e5dc20f;
@@ -1024,6 +1051,20 @@ body {
 }
 
 
+
+
+/*** Dynamic Form (temp) ***/
+.site-dynamic-form {
+    display: none;
+}
+
+
+
+
+
+
+
+
 /*** Footer ***/
 .site-footer {
     position: relative;
@@ -1043,6 +1084,7 @@ body {
     font-weight: 700;
     font-size: 28px;
 }
+
 /* End Custom bootstrap */
 
 .site-footer .info_logo .navbar-brand span {
@@ -1061,7 +1103,7 @@ body {
 
 
 
-/*** Theme-HK ***/ 
+/*** Theme-HK ***/
 .theme-hk .fc-theme {
     color: var(--theme-hk) !important;
 }
@@ -1126,7 +1168,7 @@ body {
     box-shadow: 0 0 0 2px var(--theme-hk);
 }
 
-.theme-hk .site-work .filterable-button .btn.selected, 
+.theme-hk .site-work .filterable-button .btn.selected,
 .theme-hk .site-work .filterable-button .btn:focus {
     background-color: var(--theme-hk);
     color: #fff;
@@ -1167,7 +1209,7 @@ body {
 
 
 
-/*** Theme-Green ***/ 
+/*** Theme-Green ***/
 .theme-green .fc-theme {
     color: var(--theme-green) !important;
 }
@@ -1232,7 +1274,7 @@ body {
     box-shadow: 0 0 0 2px var(--theme-green);
 }
 
-.theme-green .site-work .filterable-button .btn.selected, 
+.theme-green .site-work .filterable-button .btn.selected,
 .theme-green .site-work .filterable-button .btn:focus {
     background-color: var(--theme-green);
     color: #fff;
