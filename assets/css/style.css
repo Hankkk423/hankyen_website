@@ -84,6 +84,25 @@ body {
 }
 
 
+/*** Cursor Tracker ***/
+.cursor-tracker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s;
+    /* background-color: #fa1010; */
+    background-image: url(../imgs/tracker_s02.png);
+    background-position: center center;
+    background-size: contain; /* Adjust to fit your needs */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+
+
 
 /*** Back To Top Button ***/
 .back_to_top {
