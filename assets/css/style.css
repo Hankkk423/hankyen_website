@@ -951,6 +951,44 @@ body {
 /* End Custom bootstrap */
 
 
+/*** Shake Image ***/
+.site-shake-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Adjust this size as needed */
+    height: 500px; /* Adjust this size as needed */
+    margin: 5px 0 5px 0;
+    padding: 15px;
+    background-color: #2e5dc20f;
+}
+
+.site-shake-image .img-place {
+    width: 100%;
+    height: 100%;
+    /* margin: 10px 0 10px 0;
+    padding: 5px 0 5px 0; */
+    background-image: url(../imgs/shake_s01.jpg);
+    background-color: #1057fa;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.site-shake-image .text-content {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+@media (max-width: 540px) {
+    .site-shake-image .text-content {
+        font-size: 25px;
+    }
+}
+
 
 /*** Footer ***/
 .site-footer {
@@ -983,37 +1021,6 @@ body {
 }
 
 
-
-
-/*** Shake Image ***/
-.site-shake-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* Adjust this size as needed */
-    height: 700px; /* Adjust this size as needed */
-    margin: 5px 0 5px 0;
-    padding: 15px;
-    background-color: #2e5dc20f;
-}
-
-.site-shake-image .img-place {
-    width: 100%;
-    height: 100%;
-    /* margin: 10px 0 10px 0;
-    padding: 5px 0 5px 0; */
-    background-image: url(../imgs/shake_s01.jpg);
-    background-color: #1057fa;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-}
-
-.site-shake-image .text-content {
-    color: #fff;
-}
 
 
 
@@ -1106,6 +1113,11 @@ body {
 .theme-hk .site-contact .btn {
     background-color: #45678e;
     color: #fff;
+}
+
+/* Shake Image*/
+.theme-hk .site-shake-image .text-content {
+    color: #45678e;
 }
 
 /* Footer */
@@ -1207,6 +1219,11 @@ body {
 .theme-green .site-contact .btn {
     background-color: #8cc63f;
     color: #fff;
+}
+
+/* Shake Image*/
+.theme-green .site-shake-image .text-content {
+    color: #8cc63f;
 }
 
 /* Footer */

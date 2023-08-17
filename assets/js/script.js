@@ -148,10 +148,10 @@ $('.testi-carousel').owlCarousel({
 
 // Shaking Image
 $(document).ready(function() {
-  const $imageContainer = $('.site-shake-image .img-place');
+  const $imgPlace = $('.site-shake-image .img-place');
   let isDragging = false;
 
-  $imageContainer.on('mousemove touchstart', function(e) {
+  $imgPlace.on('mousemove touchstart', function(e) {
     e.preventDefault();
     isDragging = true;
   });
@@ -162,15 +162,24 @@ $(document).ready(function() {
     const clientX = e.clientX || e.originalEvent.touches[0].clientX;
     const clientY = e.clientY || e.originalEvent.touches[0].clientY;
 
-    const xOffset = (clientX / $imageContainer.width() - 0.5) * 30; // Adjust the factor as needed
-    const yOffset = (clientY / $imageContainer.height() - 0.5) * 30; // Adjust the factor as needed
+    const xOffset = (clientX / $imgPlace.width() - 0.5) * 30; // Adjust the factor as needed
+    const yOffset = (clientY / $imgPlace.height() - 0.5) * 30; // Adjust the factor as needed
 
-    $imageContainer.css('transform', `translate(${xOffset}px, ${yOffset}px)`);
+    $imgPlace.css('transform', `translate(${xOffset}px, ${yOffset}px)`);
   });
 
   $(document).on('mouseleave touchend', function() {
     isDragging = false;
-    $imageContainer.css('transform', 'translate(0, 0)');
+    $imgPlace.css('transform', 'translate(0, 0)');
+  });
+
+  // Typed.js for dynamic typing
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings', // ID of the element containing your strings
+    typeSpeed: 50, // Typing speed in milliseconds
+    backSpeed: 30, // Backspacing speed in milliseconds
+    backDelay: 1000, // Delay before starting to backspace
+    loop: true // Loop the typing animation
   });
 });
 
