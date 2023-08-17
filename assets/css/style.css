@@ -985,6 +985,41 @@ body {
 
 
 
+/*** Shake Image ***/
+.site-shake-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Adjust this size as needed */
+    height: 700px; /* Adjust this size as needed */
+    margin: 5px 0 5px 0;
+    padding: 15px;
+    background-color: #2e5dc20f;
+}
+
+.site-shake-image .img-place {
+    width: 100%;
+    height: 100%;
+    /* margin: 10px 0 10px 0;
+    padding: 5px 0 5px 0; */
+    background-image: url(../imgs/shake_s01.jpg);
+    background-color: #1057fa;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.site-shake-image .text-content {
+    color: #fff;
+}
+
+
+
+
+
+
 /*** Theme-HK ***/ 
 .theme-hk .fc-theme {
     color: #45678e !important;

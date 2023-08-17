@@ -133,14 +133,7 @@ $('.filterable-button').on('click', 'button', function () {
 
 
 
-
-
-
-
-
-
-
-
+// Tesiminials owl-carousel
 $('.testi-carousel').owlCarousel({
   margin: 0,
   loop: true,
@@ -148,3 +141,36 @@ $('.testi-carousel').owlCarousel({
   autoplayTimeout: 4000,
   items: 1,
 });
+
+
+
+
+
+// Shaking Image
+$(document).ready(function() {
+  const $imageContainer = $('.site-shake-image .img-place');
+  let isDragging = false;
+
+  $imageContainer.on('mousemove touchstart', function(e) {
+    e.preventDefault();
+    isDragging = true;
+  });
+
+  $(document).on('mousemove touchmove', function(e) {
+    if (!isDragging) return;
+
+    const clientX = e.clientX || e.originalEvent.touches[0].clientX;
+    const clientY = e.clientY || e.originalEvent.touches[0].clientY;
+
+    const xOffset = (clientX / $imageContainer.width() - 0.5) * 30; // Adjust the factor as needed
+    const yOffset = (clientY / $imageContainer.height() - 0.5) * 30; // Adjust the factor as needed
+
+    $imageContainer.css('transform', `translate(${xOffset}px, ${yOffset}px)`);
+  });
+
+  $(document).on('mouseleave touchend', function() {
+    isDragging = false;
+    $imageContainer.css('transform', 'translate(0, 0)');
+  });
+});
+
