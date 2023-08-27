@@ -97,7 +97,7 @@ body {
     pointer-events: none;
     transition: opacity .25s;
     /* background-color: #fa1010; */
-    background-image: url(../imgs/tracker_s02.png);
+    background-image: url(../imgs/tracker_01.png);
     background-position: center center;
     background-size: contain;
     /* Adjust to fit your needs */
@@ -794,7 +794,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 /* End Custom bootstrap */
 
 .site-work .gridder .grid-item .img-caption {
