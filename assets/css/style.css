@@ -5,6 +5,7 @@
     --theme-green: #8cc63f;
     --theme-green-bg: #8cc63f40;
     --theme-purple: #6f42c1;
+    --theme-purple-bg: #6e42c145;
 }
 
 
@@ -491,6 +492,11 @@ body {
     border: 2px solid #888;
 }
 
+.site-about .info-list li a {
+    color: #85bb65;
+    font-weight: 500;
+}
+
 /* Custom bootstrap */
 .site-about .btn-cv {
     padding: 10px 30px;
@@ -580,6 +586,10 @@ body {
     border-radius: 30px 0 60px 30px;
 }
 
+.site-about .timeline li .title.title-lg {
+    width: 200px;
+}
+
 .site-about .timeline li .details {
     background-color: #f4f5f8;
     margin-top: 8px;
@@ -600,7 +610,6 @@ body {
     margin-top: 5px;
     margin-bottom: 10px;
 }
-
 /* End Custom bootstrap */
 
 
@@ -625,7 +634,6 @@ body {
     font-size: 14px;
     border-radius: 40px;
 }
-
 /* End Custom bootstrap */
 
 /* Custom bootstrap */
@@ -635,7 +643,6 @@ body {
     background-color: #fff;
     border: 0;
 }
-
 /* End Custom bootstrap*/
 
 .site-service .card .icon {
@@ -705,7 +712,6 @@ body {
     font-size: 14px;
     border-radius: 40px;
 }
-
 /* End Custom bootstrap */
 
 .site-work .filterable-button {
@@ -733,7 +739,6 @@ body {
     border: 0;
     height: unset;
 }
-
 /* End Custom bootstrap */
 
 .site-work .filterable-button .btn.selected,
@@ -811,7 +816,6 @@ body {
     font-size: 14px;
     margin-bottom: 0;
 }
-
 /* End Custom bootstrap */
 
 .site-work .gridder .grid-item .img-caption p::before {
@@ -867,7 +871,6 @@ body {
     width: 100%;
     height: auto;
 }
-
 /* End Custom owl-carousel  */
 
 .site-testimonial .testi-carousel .item .caption {
@@ -927,7 +930,6 @@ body {
 .site-testimonial .testi-carousel .owl-dots .owl-dot.active span {
     background: #1057fa;
 }
-
 /* End Custom owl-caroesel */
 
 
@@ -951,7 +953,6 @@ body {
     font-size: 14px;
     border-radius: 40px;
 }
-
 /* End Custom bootstrap */
 
 .site-contact .maps-container {
@@ -976,7 +977,6 @@ body {
     border: 2px solid #c2c6ce;
     font-weight: 500;
 }
-
 /* End Custom bootstrap */
 
 /* Custom bootstrap */
@@ -990,7 +990,6 @@ body {
     border-radius: 6px;
     box-shadow: 0 0 0 2px #fff, 0 3px 9px rgba(0, 0, 0, 0.3);
 }
-
 /* End Custom bootstrap */
 
 
@@ -1083,7 +1082,6 @@ body {
     font-weight: 700;
     font-size: 28px;
 }
-
 /* End Custom bootstrap */
 
 .site-footer .info_logo .navbar-brand span {
@@ -1126,6 +1124,10 @@ body {
 
 .theme-hk .site-about .info-list li::before {
     border-color: var(--theme-hk);
+}
+
+.theme-hk .site-about .info-list li a {
+    color: var(--theme-hk);
 }
 
 .theme-hk .site-about .btn-cv {
@@ -1208,7 +1210,7 @@ body {
 
 
 
-/*** Theme-Green ***/
+/*** Theme-GREEN ***/
 .theme-green .fc-theme {
     color: var(--theme-green) !important;
 }
@@ -1232,6 +1234,10 @@ body {
 
 .theme-green .site-about .info-list li::before {
     border-color: var(--theme-green);
+}
+
+.theme-green .site-about .info-list li a {
+    color: var(--theme-green);
 }
 
 .theme-green .site-about .btn-cv {
@@ -1308,4 +1314,114 @@ body {
 
 .theme-green .site-footer .info_bottom .link-box {
     color: var(--theme-green);
+}
+
+
+
+
+
+/*** Theme-PURPLE ***/
+.theme-purple .fc-theme {
+    color: var(--theme-purple) !important;
+}
+
+/* Nav Bar */
+.theme-purple .navbar .nav-item .btn {
+    background-color: var(--theme-purple);
+    color: #fff;
+}
+
+/* Home */
+.theme-purple .site-home .badge {
+    background-color: var(--theme-purple-bg);
+    color: var(--theme-purple);
+}
+
+/* About */
+.theme-purple .site-about .img-place::before {
+    border-color: var(--theme-purple);
+}
+
+.theme-purple .site-about .info-list li::before {
+    border-color: var(--theme-purple);
+}
+
+.theme-purple .site-about .info-list li a {
+    color: var(--theme-purple);
+}
+
+.theme-purple .site-about .btn-cv {
+    color: var(--theme-purple);
+    box-shadow: 0 0 0 2px var(--theme-purple);
+}
+
+.theme-purple .site-about .progress {
+    box-shadow: 0 0 0 2px var(--theme-purple);
+}
+
+.theme-purple .site-about .progress-bar {
+    background-color: var(--theme-purple);
+}
+
+.theme-purple .site-about .timeline li:first-child::before {
+    background-color: var(--theme-purple);
+    box-shadow: 0 0 0 2px var(--theme-purple);
+}
+
+.theme-purple .site-about .timeline li:first-child .title {
+    background-color: var(--theme-purple);
+}
+
+/* Service */
+.theme-purple .site-service .badge {
+    background-color: var(--theme-purple-bg);
+    color: var(--theme-purple);
+}
+
+/* Work */
+.theme-purple .site-work .badge {
+    background-color: var(--theme-purple-bg);
+    color: var(--theme-purple);
+}
+
+.theme-purple .site-work .filterable-button .btn {
+    color: var(--theme-purple);
+    box-shadow: 0 0 0 2px var(--theme-purple);
+}
+
+.theme-purple .site-work .filterable-button .btn.selected,
+.theme-purple .site-work .filterable-button .btn:focus {
+    background-color: var(--theme-purple);
+    color: #fff;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--theme-purple);
+}
+
+.theme-purple .site-work .btn-loadmore {
+    background-color: var(--theme-purple);
+    color: #fff;
+}
+
+/* Contact */
+.theme-purple .site-contact .badge {
+    background-color: var(--theme-purple-bg);
+    color: var(--theme-purple);
+}
+
+.theme-purple .site-contact .btn {
+    background-color: var(--theme-purple);
+    color: #fff;
+}
+
+/* Shake Image*/
+.theme-purple .site-shake-image .text-content {
+    color: var(--theme-purple);
+}
+
+/* Footer */
+.theme-purple .site-footer .info_logo .navbar-brand span {
+    color: var(--theme-purple);
+}
+
+.theme-purple .site-footer .info_bottom .link-box {
+    color: var(--theme-purple);
 }
