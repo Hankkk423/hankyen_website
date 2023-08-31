@@ -142,7 +142,7 @@ body {
 
 @media (max-width: 400px) {
     .config {
-        right: -100px;
+        /* right: -100px; */
     }
 }
 
