@@ -405,7 +405,7 @@ body {
     padding-left: 15px;
 }
 
-@media (min-width: 390px) {
+@media (max-width: 400px) {
     .site-home .features .col-mobile {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
