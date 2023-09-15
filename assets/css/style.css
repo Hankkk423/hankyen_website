@@ -471,6 +471,33 @@ body {
 
 /* Custom bootstrap */
 
+.site-about .grad-an {
+    display: inline-block;
+    background-image: linear-gradient(-45deg, #c47c1e, #c47c1e, #fff, #fff, #c47c1e, #c47c1e) !important;
+    background-size: 400% !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Gradient 3s ease infinite !important;
+    -moz-animation: Gradient 3s ease infinite !important;
+    animation: Gradient 3s ease infinite !important;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
 .site-about .info-list {
     position: relative;
     padding-left: 30px;
@@ -627,6 +654,73 @@ body {
     margin-bottom: 10px;
 }
 /* End Custom bootstrap */
+
+
+
+
+/*** Brand Bar ***/
+.site-brand .brand-bar-wrapper {
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px 0;
+    background: white;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.site-brand .brand-bar-wrapper:before,
+.site-brand .brand-bar-wrapper:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: " ";
+    z-index: 2;
+}
+
+.site-brand .brand-bar-wrapper:before {
+    left: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255, 0), white);
+}
+
+.site-brand .brand-bar-wrapper:after {
+    right: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0), white);
+}
+
+.site-brand .brand-bar-wrapper:hover .brand-bar {
+    /* animation-play-state: paused; */
+}
+
+.site-brand .brand-bar {
+    display: inline-block;    
+    animation: scroll 25s infinite linear;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.site-brand .brand-logo {
+    /* width: 150px; */
+    height: 50px;
+    margin: 0 90px;
+}
+
+/* For Mobile */
+@media (max-width: 47.9em) {
+    .site-brand .brand-logo {
+        margin: 0 30px;
+    }
+}
+/* End For Mobile */
 
 
 
